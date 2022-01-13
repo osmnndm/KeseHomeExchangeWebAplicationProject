@@ -11,9 +11,9 @@ import org.junit.runner.RunWith;
         plugin = {"pretty","html:target/failed-cucumber-reports",
                 "json:target/cucumber.json",
                 "rerun:target/rerun.txt"},
-        features = "src/test/resources/features/US18KeseLoginPage.feature",
+        features = "src/test/resources/features/US017ForgotPasswordPageStepD.feature",
         glue = "com/kese/stepdefinitions",
-        //tags = "@main",
+        tags = "@wip",
         dryRun =false
 )
 public class CukesRunner {
