@@ -15,8 +15,8 @@ public class ForgotPasswordPage extends CommonPage {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement sifremiDegistirButton;
 
-    @FindBy(linkText = "//*[contains(text(),'Giriş Sayfasına Git')]")
-    public WebElement girisSayfasinaYonlendirme;
+   // @FindBy(linkText = "//*[contains(text(),'Giriş Sayfasına Git')]")
+    //public WebElement girisSayfasinaYonlendirme;
 
     @FindBy (xpath = "//*[contains(text(),'Şifremi Unuttum')]")
     public WebElement getSifremiUnuttumButtonu;
@@ -24,5 +24,9 @@ public class ForgotPasswordPage extends CommonPage {
     @FindBy(xpath = "//a[contains(text(),'Giriş Yap')]")
     public WebElement girisyapButtonu;
 
+    @FindBy(xpath = "//a[@class='text-decoration-underline'and contains(text(),'Giriş Sayfasına Git')]")
+    public WebElement girisSayfasinaYonlendirme;
 
+    //@FindBy(linkText = "Girmiş olduğunuz email adresine sıfırlama linki gönderildi")
+    //public WebElement girisSayfasinaYonlendirme;
 }

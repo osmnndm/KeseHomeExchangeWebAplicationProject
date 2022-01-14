@@ -20,7 +20,7 @@ public class US017ForgotPasswordPageStepD {
 
     }*/
 
-    @Given("User goes to test.kese url")
+    @Given("User goes to test kese url")
     public void user_goes_to_test_kese_url() {
         Driver.get().get(ConfigurationReader.get("url"));
        // BrowserUtils.waitFor(3000);
@@ -49,7 +49,6 @@ public class US017ForgotPasswordPageStepD {
 
 
 
-
     @Then("User clicks on Change Password button")
     public void user_clicks_on_Change_Password_button() {
         forgotPasswordPage.sifremiDegistirButton.click();
@@ -66,8 +65,12 @@ public class US017ForgotPasswordPageStepD {
 
     @Given("User sees change my password text")
     public void user_sees_change_my_password_text() {
-        BrowserUtils.waitFor(3000);
+        BrowserUtils.waitFor(3);
         Assert.assertTrue(forgotPasswordPage.girisSayfasinaYonlendirme.isDisplayed());
+
+      forgotPasswordPage.girisSayfasinaYonlendirme.click();
+
+
 
     }
 
